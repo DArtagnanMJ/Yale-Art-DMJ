@@ -1,0 +1,581 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #1C3A69;
+    --secondary: #FBCD1C;
+    --black: #220000;
+}
+
+body{
+    font-family:"EB Garamond", sans-serif;
+    color: var(--primary);
+    font-size: 100%;
+}
+
+/* Index Page */
+/* Main Menu/Nav Bar */
+
+
+#main-home{
+    padding-top: 60px;
+    background-image: url(Images/Home-Background.jpg);
+    min-height: 90vh;
+    background-position: top center;
+    background-size: cover; 
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 100%;
+    margin: auto;
+}
+
+nav{
+    top: 0; 
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+     padding: 20px 10px;
+    border-bottom: 3px solid var(--secondary);
+    box-shadow:  0px 4px 6px rgba(0, 0, 0, 0.4);
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+}
+
+nav .logo{
+    padding-right: 30px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    grid-gap: 30px;
+}
+
+.nav-list a{
+    color: var(--secondary);
+    font-size: 25px;
+}
+
+/* Main Menu/Nav Bar */
+
+.main-content{
+    position: absolute;
+    transform: translateY(600px);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 1000px;
+    padding: 10px;
+    background-color: rgb(34, 0, 0, 0.7);
+    color: var(--secondary);
+}
+
+.main-content .intro-heading{
+    font-size: 80px;
+}
+
+.main-content .main-heading{
+    font-size: 35px;
+}
+
+#sculpting{
+    background-color: var(--primary);
+    border-top: 3px solid var(--secondary);
+    border-bottom: 3px solid var(--secondary);
+}
+
+#sculpting .container{
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+#sculpting .intro-heading{
+    font-size: 70px;
+    color: var(--secondary);
+    max-width: 400px;
+  
+}
+
+#sculpting .line{
+    width: 5px;
+    height: 300px;
+    border: 10px;
+    background: var(--secondary);
+
+}
+
+#sculpting .description{
+    font-size: 40px;
+    padding-right: 30px;
+    color: var(--secondary);
+
+}
+
+#graphic-design{
+    background-color: var(--black);
+}
+
+#graphic-design .container{
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+#graphic-design .intro-heading{
+    font-size: 70px;
+    color: var(--secondary);
+    max-width: 400px; 
+}
+
+#graphic-design .line{
+    width: 5px;
+    height: 300px;
+    border: 10px;
+    background: var(--secondary);
+}
+
+#graphic-design .description{
+    font-size: 40px;
+    padding-right: 30px;
+    color: var(--secondary);
+
+}
+
+#photography{
+    background-color: var(--primary);
+    border-top: 3px solid var(--secondary);
+    border-bottom: 3px solid var(--secondary);
+}
+
+.imageborder{
+    border-right: 3px solid var(--secondary);
+}
+
+#photography .container{
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+#photography .intro-heading{
+    font-size: 70px;
+    color: var(--secondary);
+    
+}
+
+#photography .line{
+    width: 5px;
+    height: 300px;
+    border: 10px;
+    background: var(--secondary);
+}
+
+#photography .description{
+    font-size: 40px;
+    padding-right: 30;
+    color: var(--secondary);
+}
+
+
+/* Index Page */
+
+
+
+/* About us */
+
+#main-about{
+    padding-top: 60px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid var(--secondary);
+    background-image: url(Images/about.jpg);
+    min-height: 90vh;
+    background-position: top center;
+    background-size: cover;
+}
+
+#master-about{ /* Control center for info boxes*/
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--secondary);
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.ab-combo{
+    display: flex;
+    grid-gap: 30px;
+}
+
+.ab-one{
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 5px;
+    width: 1060px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+
+.ab-two, .ab-three{
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 5px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.ab-two .line, .ab-three .line{
+    width: 500px;
+    height: 3px;
+    border: 10px;
+    background: var(--secondary);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ab-one .line{
+    width: 1060px;
+    height: 3px;
+    border: 10px;
+    background: var(--secondary);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* About Us Page */
+
+
+
+/* Apply to Yale */
+
+#main-ad{
+    padding-top: 60px;
+    background-image: url(Images/Exhibitions_3.png);
+    min-height: 90vh;
+    background-position: top center;
+    background-size: cover;
+    border-bottom: 3px solid var(--secondary);
+    margin-bottom: 30px;
+}
+
+#admissions .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#admissions .ad-type{
+    border: 3px solid var(--secondary);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 700px;
+    margin-bottom: 30px;
+    color: var(--secondary);
+    background-color: var(--black);
+    height: 300px; 
+}
+
+#admissions .first-year{
+    font-size: 60px;
+}
+
+#admissions .description{
+    font-size: 35px;
+}
+
+#ex-li .card{
+    margin: 5px;
+    border-radius: 5px;
+    width: 1000px;
+    
+}
+
+.adborder{
+    border-left: 3px solid var(--secondary);
+    border-top: 3px solid var(--secondary);
+    border-bottom: 3px solid var(--secondary);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
+/* Apply to Yale */
+
+
+
+/* Exhibitions Page */
+
+#main-ex{
+    padding-top: 60px;
+    background-image: url(Images/Exhibitions_2.png);
+    min-height: 90vh;
+    background-position: top center;
+    background-size: cover;
+    border-bottom: 3px;
+}
+
+#exhibitions .container{
+    background-color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--secondary);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-top: 3px solid var(--secondary);
+    border-bottom: 3px solid var(--secondary);
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow:  0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#exhibitions .intro-heading{
+    font-size: 30px;
+    margin: 15px;
+}
+
+#exhibitions .description{
+    font-size: 25px;
+    margin: 15px;
+    border: 5px solid #4d2020;
+    border-radius: 5px;
+    background-color: #4d2020;
+    width: 1200px;
+}
+
+#ex-list{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:
+    
+}
+#ex-list .line{
+    width: 100%;
+    height: 5px;
+    background: var(--secondary);
+}
+
+
+#ex-list .container{
+    display: flex;
+    flex-wrap: nowrap;
+    /*position: relative;*/
+    width: 100%;
+    max-width: 1500px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    
+}
+
+#ex-list .event-set1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--black);
+    border: 5px solid var(--black);
+    border-radius: 5px;
+    color: var(--secondary);
+    overflow: hidden;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+#ex-list .event-set2{
+    background-color: var(--black);
+    border: 5px solid var(--black);
+    border-radius: 5px;
+    color: var(--secondary);
+    overflow: hidden;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+#ex-list .event-year{
+    background-color: var(--black);
+    padding: 15px;
+   
+}
+
+#ex-list .card{
+    background-color: var(--primary);
+    margin: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#ex-list .event-title{
+    padding: 15px;
+    font-size: 30px;
+    
+}
+
+#ex-list .event{
+    padding: 15px;
+    
+}
+
+/* Exhibitions Page */
+
+
+
+/* Contact Us Page */
+
+
+#contact{
+    margin: 10px;
+    position: relative;
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    margin-top: 150px;
+    max-width: 100%;
+    background-color: var(--primary);
+}
+
+.contact-main{
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#contact .container{
+    background-color: var(--primary);
+    justify-content: center;
+    text-align: center;
+}
+
+#contact .container h1{
+    text-align: center;
+    justify-content: center;
+    font-size: 70px;
+    color: var(--secondary);
+}
+
+
+#contact .all-info{
+    border-top: 5px solid var(--secondary);
+    padding-top: 10px;
+    color: var(--secondary);
+    display: flex; 
+    justify-content: center; 
+    grid-gap: 40px; 
+}
+
+#contact .contact-info{
+    padding: 10px;
+}
+
+#contact .contact-info p{
+    font-size: 20px;
+}
+
+#contact .social-media{
+    padding: 10px;
+    color: var(--secondary);
+    font-size: 30px;
+}
+
+#contact .social-media p{
+    font-size: 20px;
+}
+
+.contact-info ul{
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.mail-address{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.mail-address p{
+    font-size: 20px
+}
+
+.social-media ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+/* Contact Us Page */
+    
+
+
+footer .container{
+    width: 100%;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing:border-box;
+    background-color: dimgray;
+    margin-top: 30px;
+}
+
+footer .line{
+    width: 2px;
+    height: 40px;
+    border: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: white;
+}
+    
+.footer-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 16px;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.footer-links2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 16px;
+    list-style: none;
+    padding-left: 10px;
+}
+
+.footer-links a{
+    color: white;
+}
+
+.footer-links2 li, a{
+    color: white;
+}
